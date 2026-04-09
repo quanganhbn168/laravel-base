@@ -19,9 +19,9 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@example.com',
         ], [
             'name' => 'Super Admin',
-            'password' => bcrypt('password'),
+            'password' => bcrypt('admin123'),
         ]);
-        
+
         // Cấp quyền super_admin của Filament Shield
         $admin->assignRole('super_admin');
     }

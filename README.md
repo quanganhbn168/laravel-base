@@ -28,14 +28,14 @@ This boilerplate comes pre-configured with the complete [Filament](https://filam
     composer install
     npm install
     ```
-4. Set up your `.env` file according to `.env.example` and run migrations:
+4. Set up your `.env` file according to `.env.example` and run migrations along with the database seeders:
     ```bash
-    php artisan migrate
+    php artisan migrate --seed
     ```
 
 ## 🔑 Default Credentials
 
-To access the `/admin` filament panel, use the pre-seeded super-admin account:
+To access the `/admin` filament panel, use the pre-seeded super-admin account (which is automatically generated when you run the seed command above):
 
 - **Email:** `admin@example.com`
 - **Password:** `password`
